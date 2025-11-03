@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build --outDir dist",
+    "dev": "node init && vite --host 0.0.0.0",
+    "build": "node init && tsc -b && vite build --outDir dist",
     "lint": "bunx tsc --noEmit && bunx biome lint --write",
     "format": "bunx biome format --write",
     "preview": "vite preview"
